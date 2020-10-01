@@ -12,6 +12,7 @@ then
     fi
   else
     echo "Its a leap year"
-fi
+  fi
+else
   echo "Its not a leap year"
 fi
