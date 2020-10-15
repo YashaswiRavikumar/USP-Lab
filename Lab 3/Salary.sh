@@ -1,7 +1,3 @@
-echo "Enter Da: "
-read da
-echo "Enter Hra: "
-read hra
-echo "Enter basic pay: "
-read basic
-echo total = $(expr $basic + $da + $hra)
+read -p "Enter salary: " sal
+gros_sal=`echo "$sal*0.40+$sal*0.20" | bc -l`
+echo "Gross Salary is: $gros_sal"
