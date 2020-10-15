@@ -1,11 +1,9 @@
 echo "Enter a Number"
 read num
-if [ $num -lt 0 ]
-then
-    echo "Negative"
-elif [ $num -gt 0 ]
-then
-    echo "Positive"
+if [ $num -lt 0 ];then
+        echo "Negative"
+elif [ $num -gt 0 ];then
+        echo "Positive"
 else
-    echo "Zero"
+        echo "Zero"
 fi
