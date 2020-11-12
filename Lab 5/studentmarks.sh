@@ -26,6 +26,7 @@ echo "Total           : $tot"
 echo "Average         : $avg" 
 if [ $m1 -ge 35 ] && [ $m2 -ge 35 ] && [ $m3 -ge 35 ]  
 then 
+  echo"Pass"
   
  if [ $avg -ge 85 -a $avg -le 100  ] 
  then 
@@ -38,7 +39,7 @@ then
          echo "second Class" 
  elif [ $avg -ge 40 -a $avg -le 49 ] 
  then 
- 
+        echo "third class"
  fi 
 else 
  echo "Result          : Fail" 
