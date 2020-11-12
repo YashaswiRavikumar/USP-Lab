@@ -26,8 +26,6 @@ echo "Total           : $tot"
 echo "Average         : $avg" 
 if [ $m1 -ge 35 ] && [ $m2 -ge 35 ] && [ $m3 -ge 35 ]  
 then 
-  echo"Pass"
-  
  if [ $avg -ge 85 -a $avg -le 100  ] 
  then 
   echo "Distinction" 
