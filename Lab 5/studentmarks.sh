@@ -26,26 +26,22 @@ echo "Total           : $tot"
 echo "Average         : $avg" 
 if [ $m1 -ge 35 ] && [ $m2 -ge 35 ] && [ $m3 -ge 35 ]  
 then 
- echo "Result          : Pass" 
   
- if [ $avg -ge 90 ] 
+ if [ $avg -ge 85 -a $avg -le 100  ] 
  then 
-  echo "Grade           : S" 
- elif [ $avg -ge 80 ] 
+  echo "High Distinction" 
+ elif [ $avg -ge 75 -a $avg -le 84 ] 
  then 
-         echo "Grade           : A" 
- elif [ $avg -ge 70 ] 
+         echo "Distinction" 
+ elif [ $avg -ge 65 -a $avg -le 74 ] 
  then 
-         echo "Grade           : B" 
- elif [ $avg -ge 60 ] 
+         echo "Credit" 
+ elif [ $avg -ge 50 -a $avg -le 64 ] 
  then 
-         echo "Grade           : C" 
- elif [ $avg -ge 50 ] 
+         echo "Pass" 
+ elif [ $avg -ge 40 -a $avg -le 49 ] 
  then 
-         echo "Grade           : D" 
- elif [ $avg -ge 35 ] 
- then 
-         echo "Grade           : E" 
+         echo "Just Pass" 
  fi 
 else 
  echo "Result          : Fail" 
