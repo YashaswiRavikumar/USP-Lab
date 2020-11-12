@@ -29,19 +29,16 @@ then
   
  if [ $avg -ge 85 -a $avg -le 100  ] 
  then 
-  echo "High Distinction" 
- elif [ $avg -ge 75 -a $avg -le 84 ] 
+  echo "Distinction" 
+ elif [ $avg -ge 60 -a $avg -le 84 ] 
  then 
-         echo "Distinction" 
- elif [ $avg -ge 65 -a $avg -le 74 ] 
+         echo "First Class" 
+ elif [ $avg -ge 50 -a $avg -le 59 ] 
  then 
-         echo "Credit" 
- elif [ $avg -ge 50 -a $avg -le 64 ] 
- then 
-         echo "Pass" 
+         echo "second Class" 
  elif [ $avg -ge 40 -a $avg -le 49 ] 
  then 
-         echo "Just Pass" 
+ 
  fi 
 else 
  echo "Result          : Fail" 
